@@ -32,7 +32,12 @@
             //Console.WriteLine($"Sum = {Sum} and Sub = {Sub}");
             #endregion
 
-            
+            #region Q3
+            //int Max = 0, Min = 0;
+            //int[] Arr = { 1, 2, 3, 4, 5, 41 };
+            //MinandMax(ref Arr, ref Max, ref Min);
+            //Console.WriteLine($"Max = {Max} and Min = {Min}");
+            #endregion
 
         }
 
@@ -57,6 +62,22 @@
         }
         #endregion
 
-        
+        #region Q3 Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+        static void MinandMax(ref int[] Nums1, ref int Max, ref int Min)
+        {
+            if (Nums1 != null)
+            {
+                Max = Nums1[0];
+                Min = Nums1[0];
+                for (int i = 0; i < Nums1.Length; i++)
+                {
+                    if (Nums1[i] > Max)
+                        Max = Nums1[i];
+                    if (Nums1[i] < Min)
+                        Min = Nums1[i];
+                }
+            }
+        }
+        #endregion
     }
 }
