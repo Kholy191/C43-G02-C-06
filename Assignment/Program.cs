@@ -26,6 +26,13 @@
             */
             #endregion
 
+            #region Q2
+            //int Sum, Sub;
+            //AddandSub(3, 4, out Sum, out Sub);
+            //Console.WriteLine($"Sum = {Sum} and Sub = {Sub}");
+            #endregion
+
+            
 
         }
 
@@ -42,5 +49,14 @@
         }
         #endregion
 
+        #region Q2 Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+        static void AddandSub(int Num1, int Num2, out int Sum, out int Sub)
+        {
+            Sum = Num1 + Num2;
+            Sub = Num2 - Num1;
+        }
+        #endregion
+
+        
     }
 }
